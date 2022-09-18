@@ -1,5 +1,4 @@
-from ast import Return
-from animal import Animal
+
 
 class Mamifero(Animal):
 

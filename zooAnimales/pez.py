@@ -1,9 +1,6 @@
 from turtle import color
 
 
-from animal import Animal
-
-
 class Pez(Animal):
     _listado = []
     salmones = 0
