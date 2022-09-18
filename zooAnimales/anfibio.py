@@ -1,3 +1,6 @@
+from zooAnimales.animal import Animal
+
+
 class Anfibio(Animal):
     _listado = []
     ranas = 0

@@ -1,4 +1,8 @@
-
+from zooAnimales.mamifero import Mamifero
+from zooAnimales.ave import Ave
+from zooAnimales.reptil import Reptil
+from zooAnimales.pez import Pez
+from zooAnimales.anfibio import Anfibio
 
 class Animal:
     _totalAnimales = 0
@@ -11,7 +15,7 @@ class Animal:
         _totalAnimales += 1
 
     #def movimiento(self):
-
+        
     @staticmethod
     def totalPorTipo():
         txt = f"Mamiferos : {Mamifero.cantidadMamifero()}\nAves : {Ave.cantidadAves()}\nReptiles : {Reptil.cantidadReptiles()}\nPeces : {Pez.cantidadPeces}\nAnfibios : {Anfibio.cantidadAnfibios()}"
