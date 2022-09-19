@@ -28,4 +28,7 @@ class Zoologico:
     def getUbicacion(self):
         return self._ubicacion
 
+    def getZona(self):
+        return Zoologico._zonas
+
     
