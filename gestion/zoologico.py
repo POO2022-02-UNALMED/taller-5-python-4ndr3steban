@@ -6,7 +6,7 @@ class Zoologico:
         self._ubicacion = ubicacion
 
     def agregarZonas(self, zona):
-        self._zonas.append(zona)
+        Zoologico._zonas.append(zona)
 
     @classmethod
     def cantidadTotalAnimales(cls):
