@@ -1,4 +1,4 @@
-from animal import Animal
+from zooAnimales.animal import Animal
 
 class Anfibio(Animal):
     _listado = []
@@ -8,7 +8,7 @@ class Anfibio(Animal):
         super().__init__(nombre, edad, habitat, genero)
         self._colorPiel = colorPiel
         self._venenoso = venenoso
-        self._listado.append(self)
+        Anfibio._listado.append(self)
 
     @classmethod
     def cantidadAnfibios(cls):

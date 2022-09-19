@@ -1,4 +1,4 @@
-from animal import Animal
+from zooAnimales.animal import Animal
 
 class Mamifero(Animal):
 
@@ -9,7 +9,7 @@ class Mamifero(Animal):
         super().__init__(nombre, edad, habitat, genero)
         self._pelaje = pelaje
         self._patas = patas
-        self._listado.append(self)
+        Mamifero._listado.append(self)
 
     @classmethod
     def cantidadMamiferos(cls):

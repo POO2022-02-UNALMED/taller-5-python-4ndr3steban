@@ -1,8 +1,4 @@
-from mamifero import Mamifero
-from ave import Ave
-from reptil import Reptil
-from pez import Pez
-from anfibio import Anfibio
+import zooAnimales
 
 class Animal:
     _totalAnimales = 0
@@ -12,13 +8,13 @@ class Animal:
         self._edad = edad
         self._habitat = habitat
         self._genero = genero
-        _totalAnimales += 1
+        Animal._totalAnimales += 1
 
     #def movimiento(self):
         
-    @staticmethod
-    def totalPorTipo():
-        txt = f"Mamiferos : {Mamifero.cantidadMamifero()}\nAves : {Ave.cantidadAves()}\nReptiles : {Reptil.cantidadReptiles()}\nPeces : {Pez.cantidadPeces}\nAnfibios : {Anfibio.cantidadAnfibios()}"
+    @classmethod
+    def totalPorTipo(cls):
+        txt = f"Mamiferos : {zooAnimales.mamifero.Mamifero.cantidadMamiferos()}\nAves : {zooAnimales.ave.Ave.cantidadAves()}\nReptiles : {zooAnimales.reptil.Reptil.cantidadReptiles()}\nPeces : {zooAnimales.pez.Pez.cantidadPeces()}\nAnfibios : {zooAnimales.anfibio.Anfibio.cantidadAnfibios()}"
         return txt
 
     def __str__(self):
