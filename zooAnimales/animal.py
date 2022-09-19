@@ -25,7 +25,7 @@ class Animal:
             return f"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi genero es {self._genero}, la zona en la que me ubico es {self._zona[0]}, en el {self._zona[0].getZoo()}"
 
     def toString(self):
-        return self
+        return str(self)
 
     def setNombre(self, nombre):
         self._nombre = nombre
