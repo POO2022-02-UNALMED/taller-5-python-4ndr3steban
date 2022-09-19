@@ -25,3 +25,15 @@ class Anfibio(Animal):
     def crearSalamandra(cls, nombre, edad, genero):
         cls.salamandras += 1
         return Anfibio(nombre, edad, "selva", genero, "negro y amarillo", False)
+
+    def setColorPiel(self, cp):
+        self._colorPiel = cp
+
+    def getColorPiel(self):
+        return self._colorPiel
+
+    def setVenenoso(self, venenoso):
+        self._venenoso = venenoso
+
+    def isVenenoso(self):
+        return self._venenoso

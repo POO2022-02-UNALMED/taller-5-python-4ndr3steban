@@ -29,4 +29,15 @@ class Reptil(Animal):
         cls.serpientes += 1
         return Reptil(nombre, edad, "jungla", genero, "blanco", 1)
 
+    def setColorEscamas(self, escamas):
+        self._colorEscamas = escamas
+
+    def getColorEscamas(self):
+        return self._colorEscamas
+
+    def setLargoCola(self, lc):
+        self._largoCola = lc
+
+    def getLargoCola(self):
+        return self._largoCola
     

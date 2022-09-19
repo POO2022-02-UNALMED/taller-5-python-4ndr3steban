@@ -26,4 +26,17 @@ class Pez(Animal):
         cls.bacalaos += 1
         return Pez(nombre, edad, "oceano", genero, "gris", 6)
 
+    def setColorEscamas(self, escamas):
+        self._colorEscamas = escamas
+
+    def getColorEscamas(self):
+        return self._colorEscamas
+
+    def setCantidadAletas(self, ca):
+        self._cantidadAletas = ca
+
+    def getCantidadAletas(self):
+        return self._cantidadAletas
+
+
         

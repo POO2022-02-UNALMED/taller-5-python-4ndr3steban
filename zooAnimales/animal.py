@@ -18,8 +18,34 @@ class Animal:
         return txt
 
     def __str__(self):
-        if len(self._zonna) == 0:
+        if len(self._zona) == 0:
             return f"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi genero es {self._genero}"
         else:
             return f"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi genero es {self._genero}, la zona en la que me ubico es {self._zona[0]}, en el {self._zona[0].getZoo()}"
 
+    def toString(self):
+        return self
+
+    def setNombre(self, nombre):
+        self._nombre = nombre
+
+    def getNombre(self):
+        return self._nombre
+
+    def setEdad(self, edad):
+        self._edad = edad
+
+    def getEdad(self):
+        return self._edad
+
+    def setHabitat(self, habitat):
+        self._habitat = habitat
+
+    def getHabitat(self):
+        return self._habitat
+
+    def setGenero(self, genero):
+        self._genero = genero
+
+    def getGenero(self):
+        return self._genero
